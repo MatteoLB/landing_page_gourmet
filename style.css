@@ -1,0 +1,243 @@
+.navbar 
+{
+    background-color : black;
+}
+
+.header
+{
+	background: url('https://images.pexels.com/photos/54455/cook-food-kitchen-eat-54455.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+	background-size: cover;
+	background-position: bottom;
+	height: 92.5vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.header #callToAction
+{
+	margin-bottom: 280px;
+	font-weight: normal;
+	padding: 15px 40px;
+	font-size: 1.5rem;
+	border-color: transparent;
+	border-width: 1px;
+	animation: appearingBorder 3s forwards;
+}
+
+h1, h2, h3, h4
+{
+	font-family: 'Laila', serif;
+}
+
+.header svg
+{
+	margin-bottom: 60px;
+}
+
+
+.oddCard
+{
+	margin-top: 50px;
+}
+
+img
+{
+	max-width: 100%;
+}
+
+
+/* *********************************************************** */
+
+.path {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: dash 20s linear forwards /*infinite*/;
+}
+
+@keyframes dash {
+	0% 
+	{
+		fill: transparent;
+	}
+	19%
+	{
+		fill: transparent;
+	}
+	23%
+	{
+		fill: white;
+	}
+  	100%
+  	{
+    	stroke-dashoffset: 0;
+    	fill: white;
+  	}
+}
+
+
+
+@keyframes appearingBorder
+{
+	to
+	{
+		border-color: white;
+	}
+}
+
+@keyframes imgForwards
+{
+	50%
+	{
+		z-index: 100;
+		transform: translateX(-250px);
+	}
+	100%
+	{
+		z-index: 100;
+		transform: translateX(0px);
+	}
+}
+
+/* Formulaire*/
+
+.titleform {
+  font-size: 35px;
+}
+
+.form-style-9{
+	max-width: 450px;
+	background: #FAFAFA;
+	padding: 30px;
+	margin: 50px auto;
+	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+	border-radius: 10px;
+
+}
+.form-style-9 ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+.form-style-9 ul li{
+	display: block;
+	margin-bottom: 10px;
+	min-height: 35px;
+}
+.form-style-9 ul li  .field-style{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 8px;
+	outline: none;
+	border: 1px solid black;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+
+}.form-style-9 ul li  .field-style:focus{
+	box-shadow: 0 0 5px #B0CFE0;
+	border:1px solid #B0CFE0;
+}
+.form-style-9 ul li .field-split{
+	width: 49%;
+}
+.form-style-9 ul li .field-full{
+	width: 100%;
+}
+.form-style-9 ul li input.align-left{
+	float:left;
+}
+.form-style-9 ul li input.align-right{
+	float:right;
+}
+.form-style-9 ul li textarea{
+	width: 100%;
+	height: 100px;
+}
+.form-style-9 ul li input[type="button"],
+.form-style-9 ul li input[type="submit"] {
+
+	background-color: transparent; /* #c5cae9; */
+	border: 1px solid black;
+	display: inline-block;
+	cursor: pointer;
+	color: black;
+	padding: 8px 18px;
+	text-decoration: none;
+	font: 20px Arial, Helvetica, sans-serif;
+	transition: 1s;
+}
+.form-style-9 ul li input[type="button"]:hover,
+.form-style-9 ul li input[type="submit"]:hover {
+	background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
+	background-color: #28739E;
+}
+
+/* ************************************************** */
+
+h2.h1
+{
+	font-size: 3rem;
+}
+
+.intro-col
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.intro-col p
+{
+	font-size: 1.5rem;
+}
+
+p
+{
+	font-size: 1.2rem;
+}
+
+.imgBelow
+{
+	position: relative;
+}
+
+.imgBelow:hover
+{
+	/*animation: imgForwards 1s forwards;*/
+}
+
+.imgOnTop
+{
+	width: 80%;
+	position: absolute;
+	top: 60%;
+	left: 20%;
+}
+
+.img-cuisinier
+{
+	max-height: 90%;
+}
+
+.menuRow
+{
+	background: url('menu.jpeg');
+	background-color: #F79F79;
+	background-position: right;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.ourTeam
+{
+	background: #FFCDB2;
+}
+
+footer	{
+	background-color: black;
+	
+}
